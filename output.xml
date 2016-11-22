@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161017 09:29:08.567" generator="Robot 3.0 (Python 2.7.8 on win32)">
+<suite source="D:\robot\MainProduct.robot" id="s1" name="MainProduct">
+<test id="s1-t1" name="Test login">
+<kw name="Create Webdriver" library="Selenium2Library">
+<doc>Creates an instance of a WebDriver.</doc>
+<arguments>
+<arg>Firefox</arg>
+<arg>executable_path=C:\\Users\\Lenovo\\Downloads\\geckodriver\\geckodriver.exe</arg>
+</arguments>
+<msg timestamp="20161017 09:29:08.812" level="INFO">Creating an instance of the Firefox WebDriver</msg>
+<status status="PASS" endtime="20161017 09:29:23.979" starttime="20161017 09:29:08.811"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://clouduatv2.tab2pay.com</arg>
+</arguments>
+<msg timestamp="20161017 09:29:23.980" level="INFO">Opening url 'http://clouduatv2.tab2pay.com'</msg>
+<status status="PASS" endtime="20161017 09:29:26.843" starttime="20161017 09:29:23.979"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>login</arg>
+<arg>abcderty@gmail.com</arg>
+</arguments>
+<msg timestamp="20161017 09:29:26.844" level="INFO">Typing text 'abcderty@gmail.com' into text field 'login'</msg>
+<status status="PASS" endtime="20161017 09:29:26.950" starttime="20161017 09:29:26.843"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>12345678</arg>
+</arguments>
+<msg timestamp="20161017 09:29:26.951" level="INFO">Typing password into text field 'password'</msg>
+<status status="PASS" endtime="20161017 09:29:27.162" starttime="20161017 09:29:26.951"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20161017 09:29:27.163" level="INFO">Clicking button '1'.</msg>
+<status status="PASS" endtime="20161017 09:29:28.249" starttime="20161017 09:29:27.163"></status>
+</kw>
+<status status="PASS" endtime="20161017 09:29:28.249" critical="yes" starttime="20161017 09:29:08.810"></status>
+</test>
+<test id="s1-t2" name="Test dashborad">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>th-a</arg>
+</arguments>
+<msg timestamp="20161017 09:29:28.256" level="INFO">Clicking link 'th-a'.</msg>
+<status status="PASS" endtime="20161017 09:29:28.297" starttime="20161017 09:29:28.255"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://clouduatv2.tab2pay.com/th/product</arg>
+</arguments>
+<msg timestamp="20161017 09:29:28.297" level="INFO">Opening url 'http://clouduatv2.tab2pay.com/th/product'</msg>
+<status status="PASS" endtime="20161017 09:29:29.852" starttime="20161017 09:29:28.297"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>select_branch</arg>
+<arg>Head Office</arg>
+</arguments>
+<status status="PASS" endtime="20161017 09:29:29.922" starttime="20161017 09:29:29.852"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@class="pull-right"]</arg>
+</arguments>
+<msg timestamp="20161017 09:29:29.923" level="INFO">Clicking element 'xpath=//div[@class="pull-right"]'.</msg>
+<status status="PASS" endtime="20161017 09:29:29.964" starttime="20161017 09:29:29.922"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>section_right</arg>
+</arguments>
+<status status="PASS" endtime="20161017 09:29:30.255" starttime="20161017 09:29:29.965"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>product_code</arg>
+<arg>123123</arg>
+</arguments>
+<msg timestamp="20161017 09:29:30.256" level="INFO">Typing text '123123' into text field 'product_code'</msg>
+<status status="PASS" endtime="20161017 09:29:30.367" starttime="20161017 09:29:30.256"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>product_barcode</arg>
+<arg>23232323</arg>
+</arguments>
+<msg timestamp="20161017 09:29:30.368" level="INFO">Typing text '23232323' into text field 'product_barcode'</msg>
+<status status="PASS" endtime="20161017 09:29:30.468" starttime="20161017 09:29:30.367"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>product_name</arg>
+<arg>aaa</arg>
+</arguments>
+<msg timestamp="20161017 09:29:30.469" level="INFO">Typing text 'aaa' into text field 'product_name'</msg>
+<status status="PASS" endtime="20161017 09:29:30.531" starttime="20161017 09:29:30.469"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>แก้ไข</arg>
+</arguments>
+<msg timestamp="20161017 09:29:30.531" level="INFO">Clicking link 'แก้ไข'.</msg>
+<status status="PASS" endtime="20161017 09:29:30.585" starttime="20161017 09:29:30.531"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>product_short_name</arg>
+<arg>asas</arg>
+</arguments>
+<msg timestamp="20161017 09:29:30.586" level="INFO">Typing text 'asas' into text field 'product_short_name'</msg>
+<status status="PASS" endtime="20161017 09:29:30.660" starttime="20161017 09:29:30.585"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>แก้ไข</arg>
+</arguments>
+<msg timestamp="20161017 09:29:30.660" level="INFO">Clicking link 'แก้ไข'.</msg>
+<status status="PASS" endtime="20161017 09:29:30.707" starttime="20161017 09:29:30.660"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20161017 09:29:30.715" starttime="20161017 09:29:30.707"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>product_type</arg>
+<arg>Normal Item</arg>
+</arguments>
+<status status="PASS" endtime="20161017 09:29:30.778" starttime="20161017 09:29:30.716"></status>
+</kw>
+<kw name="Select From List" library="Selenium2Library">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>xpath=//select[@name="product_type"]</arg>
+<arg>G</arg>
+</arguments>
+<msg timestamp="20161017 09:29:30.778" level="INFO">Selecting option(s) 'G' from list 'xpath=//select[@name="product_type"]'.</msg>
+<status status="PASS" endtime="20161017 09:29:30.909" starttime="20161017 09:29:30.778"></status>
+</kw>
+<kw name="Select From List" library="Selenium2Library">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>xpath=//select[@name="category"]</arg>
+<arg>003</arg>
+</arguments>
+<msg timestamp="20161017 09:29:30.909" level="INFO">Selecting option(s) '003' from list 'xpath=//select[@name="category"]'.</msg>
+<status status="PASS" endtime="20161017 09:29:31.000" starttime="20161017 09:29:30.909"></status>
+</kw>
+<kw name="Select From List" library="Selenium2Library">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>xpath=//select[@name="level1"]</arg>
+<arg>010</arg>
+</arguments>
+<msg timestamp="20161017 09:29:31.001" level="INFO">Selecting option(s) '010' from list 'xpath=//select[@name="level1"]'.</msg>
+<status status="PASS" endtime="20161017 09:29:31.121" starttime="20161017 09:29:31.000"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20161017 09:29:31.128" starttime="20161017 09:29:31.121"></status>
+</kw>
+<kw name="Select From List" library="Selenium2Library">
+<doc>Selects `*items` from list identified by `locator`</doc>
+<arguments>
+<arg>xpath=//select[@name="level2"]</arg>
+<arg>011</arg>
+</arguments>
+<msg timestamp="20161017 09:29:31.129" level="INFO">Selecting option(s) '011' from list 'xpath=//select[@name="level2"]'.</msg>
+<status status="PASS" endtime="20161017 09:29:31.230" starttime="20161017 09:29:31.128"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>unit_cost</arg>
+<arg>180</arg>
+</arguments>
+<msg timestamp="20161017 09:29:31.230" level="INFO">Typing text '180' into text field 'unit_cost'</msg>
+<status status="PASS" endtime="20161017 09:29:31.284" starttime="20161017 09:29:31.230"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>unit_price</arg>
+<arg>259</arg>
+</arguments>
+<msg timestamp="20161017 09:29:31.285" level="INFO">Typing text '259' into text field 'unit_price'</msg>
+<status status="PASS" endtime="20161017 09:29:31.341" starttime="20161017 09:29:31.285"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>stock_mini_alert</arg>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20161017 09:29:31.342" level="INFO">Typing text '10' into text field 'stock_mini_alert'</msg>
+<status status="PASS" endtime="20161017 09:29:31.387" starttime="20161017 09:29:31.342"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>บันทึก</arg>
+</arguments>
+<msg timestamp="20161017 09:29:31.388" level="INFO">Clicking button 'บันทึก'.</msg>
+<status status="PASS" endtime="20161017 09:29:36.637" starttime="20161017 09:29:31.388"></status>
+</kw>
+<status status="PASS" endtime="20161017 09:29:36.638" critical="yes" starttime="20161017 09:29:28.251"></status>
+</test>
+<status status="PASS" endtime="20161017 09:29:36.639" starttime="20161017 09:29:08.571"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="MainProduct" pass="2">MainProduct</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
